@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sokolovskiy20.github.io/maira-amazonia/sitemap.xml
