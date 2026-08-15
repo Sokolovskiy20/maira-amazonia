@@ -5716,19 +5716,58 @@ input[type="button"] {
 .finale-center-group,
 .journey-hero-content,
 .book-header,
-.home-manifesto-intro {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.home-manifesto-intro,
+.sec-header-center {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
+/* Strict Left Alignment for All Cards Across All Pages */
 .iphone-card-content,
+.iphone-card-header,
+.iphone-card-title,
+.iphone-card-desc,
+.iphone-card-meta,
 .haven-box-content,
+.haven-box-title,
+.haven-box-desc,
+.haven-box-num,
 .haven-info-block,
 .route-day-content,
 .day-content,
-.booking-form-group {
-  text-align: left;
+.day-title,
+.day-description,
+.day-meta,
+.booking-form-group,
+.haven-card,
+.haven-info-group {
+  text-align: left !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+/* Proportional Fluid Typography System */
+h1, .hero-display-title, .journey-hero-title, .haven-hero-title, .finale-display-title {
+  font-size: clamp(2rem, 7vw, 4.5rem) !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0.05em !important;
+}
+
+h2, .sec-title, .home-journey-title, .home-havens-sec-title, .book-title {
+  font-size: clamp(1.6rem, 5.5vw, 3.2rem) !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.06em !important;
+}
+
+h3, .iphone-card-title, .haven-box-title, .day-title {
+  font-size: clamp(1.35rem, 4.5vw, 2.2rem) !important;
+  line-height: 1.2 !important;
+}
+
+p, .sec-subtitle, .iphone-card-desc, .haven-box-desc, .day-description {
+  font-size: clamp(0.85rem, 2.6vw, 0.95rem) !important;
+  line-height: 1.6 !important;
 }
 
 /* Mobile & Tablet Adaptations (≤ 900px) */
@@ -5744,8 +5783,8 @@ input[type="button"] {
   .home-manifesto-section,
   .home-journey-section,
   .route-container {
-    padding-top: 4.5rem !important;
-    padding-bottom: 4.5rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
   }
@@ -5764,19 +5803,10 @@ input[type="button"] {
     display: flex !important;
   }
 
-  /* Hero Screens */
-  .hero-display-title,
-  .journey-hero-title,
-  .haven-hero-title {
-    font-size: clamp(2.2rem, 8vw, 3.6rem) !important;
-    letter-spacing: 0.06em !important;
-    line-height: 1.15 !important;
-  }
-
   .hero-buttons-row {
     flex-direction: column !important;
     align-items: center !important;
-    gap: 0.9rem !important;
+    gap: 0.85rem !important;
     width: 100% !important;
     max-width: 320px !important;
     margin-left: auto !important;
@@ -5788,94 +5818,91 @@ input[type="button"] {
     width: 100% !important;
     justify-content: center !important;
     padding: 0.95rem 1.5rem !important;
-    font-size: 0.8rem !important;
+    font-size: 0.82rem !important;
   }
 
-  /* Journey Cards */
+  /* Journey Cards - Simplified & Left Aligned */
   .iphone-card-deck {
-    padding: 0 0.5rem !important;
-    gap: 2.5rem !important;
+    padding: 0 0.25rem !important;
+    gap: 2.2rem !important;
   }
 
   .iphone-card {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    min-height: 380px !important;
-    padding: 2rem 1.4rem !important;
-    border-radius: 20px !important;
+    min-height: 340px !important;
+    padding: 1.8rem 1.35rem !important;
+    border-radius: 18px !important;
   }
 
   .iphone-card-header {
-    gap: 0.75rem !important;
+    gap: 0.65rem !important;
     flex-wrap: wrap !important;
-  }
-
-  .iphone-card-title {
-    font-size: clamp(1.6rem, 5.5vw, 2.2rem) !important;
-    line-height: 1.15 !important;
+    margin-bottom: 0.65rem !important;
   }
 
   .iphone-card-desc {
-    font-size: 0.88rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.55 !important;
+    color: rgba(226, 239, 231, 0.82) !important;
   }
 
   .iphone-card-desc br {
-    display: none; /* Fluid text wrap on mobile */
+    display: none !important; /* Clean fluid wrap without hard breaks */
   }
 
-  /* Havens 4 Cards Grid */
+  /* Havens 4 Cards Grid - Left Aligned */
   .haven-four-grid {
     grid-template-columns: 1fr !important;
-    gap: 1.4rem !important;
+    gap: 1.25rem !important;
   }
 
   .haven-box-card {
-    min-height: 300px !important;
-    padding: 2rem 1.4rem !important;
+    min-height: 280px !important;
+    padding: 1.8rem 1.35rem !important;
     border-radius: 16px !important;
   }
 
+  .haven-box-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.55 !important;
+  }
+
   .haven-box-desc br {
-    display: none; /* Fluid text wrap on mobile */
+    display: none !important;
   }
 
   /* Manifesto Quotes */
   .manifesto-quote-text,
   .m-hero-statement {
-    font-size: clamp(1.35rem, 5vw, 2.2rem) !important;
-    line-height: 1.35 !important;
+    font-size: clamp(1.25rem, 4.8vw, 1.9rem) !important;
+    line-height: 1.4 !important;
   }
 
   /* Video Finale Screen */
   .home-finale-section {
-    min-height: 75vh !important;
-    padding: 4rem 1.25rem !important;
-  }
-
-  .finale-display-title {
-    font-size: clamp(1.75rem, 6.5vw, 3rem) !important;
-    line-height: 1.2 !important;
+    min-height: 70vh !important;
+    padding: 3.5rem 1.25rem !important;
   }
 
   .finale-btn {
     width: 100% !important;
     max-width: 320px !important;
     justify-content: center !important;
-    padding: 1.1rem 1.5rem !important;
+    padding: 1.05rem 1.4rem !important;
   }
 
   /* Booking Form & Touch Inputs */
   .book-form-card,
   .booking-box {
-    padding: 2rem 1.25rem !important;
+    padding: 1.8rem 1.2rem !important;
     border-radius: 16px !important;
   }
 
   .book-form-row {
     grid-template-columns: 1fr !important;
-    gap: 1.2rem !important;
+    gap: 1rem !important;
   }
 
   input, select, textarea {
@@ -5886,39 +5913,40 @@ input[type="button"] {
 /* Extra Small Screens (≤ 480px: iPhone SE, Mini, Galaxy Fold) */
 @media (max-width: 480px) {
   .nav-logo {
-    font-size: 0.95rem !important;
-    letter-spacing: 0.2em !important;
+    font-size: 0.92rem !important;
+    letter-spacing: 0.18em !important;
   }
 
   .hero-top-label,
   .haven-sec-tag,
   .journey-hero-tag,
   .m-hero-tag {
-    font-size: 0.65rem !important;
-    letter-spacing: 0.22em !important;
-    padding: 0.35rem 0.75rem !important;
+    font-size: 0.62rem !important;
+    letter-spacing: 0.2em !important;
+    padding: 0.3rem 0.7rem !important;
   }
 
   .iphone-card {
-    min-height: 350px !important;
-    padding: 1.6rem 1.15rem !important;
+    min-height: 320px !important;
+    padding: 1.5rem 1.15rem !important;
   }
 
   .haven-box-card {
-    min-height: 280px !important;
-    padding: 1.6rem 1.15rem !important;
+    min-height: 260px !important;
+    padding: 1.5rem 1.15rem !important;
   }
 
   .footer-content {
     flex-direction: column !important;
     text-align: center !important;
-    gap: 1.5rem !important;
+    gap: 1.3rem !important;
   }
 
   .footer-links {
     justify-content: center !important;
     flex-wrap: wrap !important;
-    gap: 0.9rem !important;
+    gap: 0.85rem !important;
   }
 }
+
 
