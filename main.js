@@ -62,40 +62,59 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // --- Video Autoplay Guardian (Prevents freezing, ensures instant smooth loop) ---
-  document.querySelectorAll('video').forEach(video => {
-    video.muted = true;
-    video.playsInline = true;
-    video.setAttribute('muted', '');
-    video.setAttribute('playsinline', '');
-    
-    const tryPlay = () => {
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // If browser throttles autoplay, resume immediately on user interaction
-          const resumeOnTouch = () => {
-            video.play().catch(() => {});
-            document.removeEventListener('touchstart', resumeOnTouch);
-            document.removeEventListener('click', resumeOnTouch);
-            document.removeEventListener('scroll', resumeOnTouch);
-          };
-          document.addEventListener('touchstart', resumeOnTouch, { once: true, passive: true });
-          document.addEventListener('click', resumeOnTouch, { once: true, passive: true });
-          document.addEventListener('scroll', resumeOnTouch, { once: true, passive: true });
+  // --- High-Performance Video Guardian (IntersectionObserver + Autoplay Fix) ---
+  const allVideos = document.querySelectorAll('video');
+  if (allVideos.length > 0) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const vid = entry.target;
+        if (entry.isIntersecting) {
+          vid.muted = true;
+          const p = vid.play();
+          if (p !== undefined) p.catch(() => {});
+        } else {
+          vid.pause();
+        }
+      });
+    }, { threshold: 0.05 });
+
+    allVideos.forEach(video => {
+      video.muted = true;
+      video.playsInline = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      videoObserver.observe(video);
+      
+      const tryPlay = () => {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            const resumeOnTouch = () => {
+              video.play().catch(() => {});
+              document.removeEventListener('touchstart', resumeOnTouch);
+              document.removeEventListener('click', resumeOnTouch);
+              document.removeEventListener('scroll', resumeOnTouch);
+            };
+            document.addEventListener('touchstart', resumeOnTouch, { once: true, passive: true });
+            document.addEventListener('click', resumeOnTouch, { once: true, passive: true });
+            document.addEventListener('scroll', resumeOnTouch, { once: true, passive: true });
+          });
+        }
+      };
+      tryPlay();
+    });
+
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
+        allVideos.forEach(v => {
+          const rect = v.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            v.play().catch(() => {});
+          }
         });
       }
-    };
-
-    tryPlay();
-
-    // Resume video playback when tab becomes active again
-    document.addEventListener('visibilitychange', () => {
-      if (!document.hidden && video.paused) {
-        video.play().catch(() => {});
-      }
     });
-  });
+  }
 
   // --- Mobile Menu Toggle ---
   const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
