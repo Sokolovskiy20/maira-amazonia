@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="site_title">М А И Р А — 10 Days Deep Green Luxury Expedition</title>
+  <meta name="description" content="A private 10-day luxury expedition into the heart of the Amazon rainforest. A sanctuary of silence, wood, stone, and wild waters. Only 8 guests.">
+  
+  <!-- Fonts: Cormorant Garamond for Serif headers & Inter for Grotesque UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=v186_small_green_numbers">
+</head>
+<body>
+
+  <!-- Navigation bar (Glassmorphism) -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" data-translate="brand_logo">М А И Р А</a>
+      
+      <div class="nav-links">
+        <a href="journey.html" class="nav-link"><span data-translate="nav_journey">ПУТЬ</span></a>
+        <a href="havens.html" class="nav-link"><span data-translate="nav_havens">ГАВАНЬ</span></a>
+        <a href="manifesto.html" class="nav-link"><span data-translate="nav_manifesto">МАНИФЕСТ</span></a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="book.html" class="nav-cta-btn" data-translate="nav_cta">ЗАБРОНИРОВАТЬ <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Button -->
+  <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-links">
+      <a href="journey.html" class="mobile-link"><span data-translate="nav_journey">ПУТЬ</span></a>
+      <a href="havens.html" class="mobile-link"><span data-translate="nav_havens">ГАВАНЬ</span></a>
+      <a href="manifesto.html" class="mobile-link"><span data-translate="nav_manifesto">МАНИФЕСТ</span></a>
+      <a href="book.html" class="mobile-cta-btn" data-translate="nav_cta">ЗАБРОНИРОВАТЬ <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <!-- Section 06: Book -->
+  <section id="book" class="book-section" style="padding-top: calc(var(--header-height) + 4rem); min-height: calc(100vh - 120px);">
+    <div class="book-container">
+      <div class="section-tag-light" data-translate="book_tag">БРОНИРОВАНИЕ</div>
+      
+      <!-- Form Container Card -->
+      <div id="booking-form-container" class="book-glass-card">
+        <h2 class="book-title" data-translate="book_title">ЗАБРОНИРОВАТЬ ЭКСПЕДИЦИЮ</h2>
+        <p class="book-subtitle" data-translate="book_subtitle">Внесите данные для бронирования. Наш персональный консьерж свяжется с вами в течение 15 минут.</p>
+        
+        <form id="booking-form" class="reservation-form">
+          <div class="form-row-compact">
+            <div class="form-group">
+              <label for="name" data-translate="form_label_name">ИМЯ</label>
+              <input type="text" id="name" placeholder="Ваше имя" data-translate="form_placeholder_name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact" data-translate="form_label_contact">ТЕЛЕФОН</label>
+              <input type="tel" id="contact" placeholder="+7 (999) 000-00-00" data-translate="form_placeholder_contact" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="guests" data-translate="form_label_guests">КОЛИЧЕСТВО ГОСТЕЙ (ПО ПРАЙСУ)</label>
+            <select id="guests" required>
+              <option value="" disabled selected data-translate="form_opt_guests_default">Выберите количество гостей</option>
+              <option value="1" data-translate="form_opt_guest1">1 гость — $14,500 / гость (Solo)</option>
+              <option value="2" data-translate="form_opt_guest2">2 гостя — $12,800 / гость (Duo)</option>
+              <option value="4+" data-translate="form_opt_guest3">От 4+ гостей — $10,500 / гость (Группа)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn" data-translate="form_submit">
+            ЗАБРОНИРОВАТЬ <span class="arrow">→</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Success Form State -->
+      <div id="booking-success-container" class="booking-success hidden">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" width="48" height="48">
+            <circle cx="12" cy="12" r="11" fill="none" stroke="#C5A059" stroke-width="1"/>
+            <polyline points="7 12 10.5 15.5 17 8.5" fill="none" stroke="#F4F2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="success-title" data-translate="success_title">ЗАЯВКА ПРИНЯТА</h3>
+        <p class="success-desc" data-translate="success_desc">Персональный консьерж экспедиции MAIRA свяжется с вами в течение 15 минут для подтверждения бронирования.</p>
+        <button id="reset-booking-btn" class="btn btn-outline" data-translate="success_reset" style="margin-top: 2rem;">ОТПРАВИТЬ ЕЩЁ ЗАПРОС</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" data-translate="brand_logo">М А И Р А</a>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="journey.html" data-translate="nav_journey">ПУТЬ</a>
+        <span class="footer-dot">·</span>
+        <a href="havens.html" data-translate="nav_havens">ГАВАНЬ</a>
+        <span class="footer-dot">·</span>
+        <a href="manifesto.html" data-translate="nav_manifesto">МАНИФЕСТ</a>
+        <span class="footer-dot">·</span>
+        <a href="book.html" data-translate="footer_nav_book">ЗАБРОНИРОВАТЬ</a>
+      </nav>
+
+      <div class="footer-copy" data-translate="footer_copyright">
+        &copy; 2026 MAIRA PRIVATE RETREATS
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Language Switcher -->
+  <div class="floating-lang-switcher">
+    <button class="lang-btn active" data-lang="ru">RU</button>
+    <span class="lang-separator">|</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <script src="main.js?v=v186_small_green_numbers"></script>
+</body>
+</html>

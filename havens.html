@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="site_title">М А И Р А — ГАВАНЬ · Частное убежище в Амазонке</title>
+  <meta name="description" content="Тихое убежище в глубине Амазонки. Дерево, камень, вода и тишина.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=v186_small_green_numbers">
+</head>
+<body>
+
+  <!-- Navigation bar (Glassmorphism) -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" data-translate="brand_logo">М А И Р А</a>
+      
+      <div class="nav-links">
+        <a href="journey.html" class="nav-link"><span data-translate="nav_journey">ПУТЬ</span></a>
+        <a href="havens.html" class="nav-link active"><span data-translate="nav_havens">ГАВАНЬ</span></a>
+        <a href="manifesto.html" class="nav-link"><span data-translate="nav_manifesto">МАНИФЕСТ</span></a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="book.html" class="nav-cta-btn" data-translate="nav_cta">ЗАБРОНИРОВАТЬ <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Button -->
+  <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-links">
+      <a href="journey.html" class="mobile-link"><span data-translate="nav_journey">ПУТЬ</span></a>
+      <a href="havens.html" class="mobile-link active"><span data-translate="nav_havens">ГАВАНЬ</span></a>
+      <a href="manifesto.html" class="mobile-link"><span data-translate="nav_manifesto">МАНИФЕСТ</span></a>
+      <a href="book.html" class="mobile-cta-btn" data-translate="nav_cta">ЗАБРОНИРОВАТЬ <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <!-- SECTION 01: HERO -->
+  <section class="haven-section haven-hero-sec" id="haven-sec-01">
+    <div class="haven-hero-bg">
+      <video class="haven-hero-video" autoplay muted loop playsinline poster="assets/cabin.jpg">
+        <source src="assets/haven_bg.mp4" type="video/mp4">
+      </video>
+      <div class="haven-hero-overlay"></div>
+      <div class="haven-hero-mist mist-1"></div>
+      <div class="haven-hero-mist mist-2"></div>
+    </div>
+    <div class="haven-sec-inner haven-hero-content">
+      <span class="haven-sec-num">01</span>
+      <div class="haven-sec-tag" data-translate="h_sec1_tag">ГАВАНЬ</div>
+      <h1 class="haven-hero-title" data-translate="h_sec1_title">ТИХОЕ МЕСТО</h1>
+      <div class="haven-hero-divider"></div>
+      <p class="haven-hero-sub" data-translate="h_sec1_sub">Природа · Пространство · Тишина</p>
+      <a href="book.html" class="btn-booking" id="haven-hero-cta">
+        <span data-translate="journey_hero_btn">ЗАБРОНИРОВАТЬ</span> <span class="arrow">→</span>
+      </a>
+    </div>
+    <a href="#haven-sec-02" class="haven-scroll-down" aria-label="Scroll down">
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- SECTION 02: THE HAVEN — PREMIUM CARDS -->
+  <section class="haven-section haven-intro-sec" id="haven-sec-02">
+    <div class="h2-header">
+      <span class="h2-num">02</span>
+      <h2 class="h2-title" data-translate="h_sec2_title">ГАВАНЬ</h2>
+      <p class="h2-sub" data-translate="h_sec2_sub">МЕСТО, КУДА ВОЗВРАЩАЮТСЯ</p>
+    </div>
+
+    <div class="h2-cards">
+      <div class="h2-card">
+        <div class="h2-card-bg" style="background-image: url('assets/haven_wood.jpg');"></div>
+        <div class="h2-card-gradient"></div>
+        <div class="h2-card-body">
+          <span class="h2-card-index">01</span>
+          <div class="h2-card-text">
+            <h3 class="h2-card-title" data-translate="h_sec2_mat1_title">ДЕРЕВО</h3>
+            <div class="h2-card-rule"></div>
+            <p class="h2-card-desc" data-translate="h_sec2_mat1_desc">Местная твёрдая древесина — основа структуры.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h2-card">
+        <div class="h2-card-bg" style="background-image: url('assets/haven_stone.jpg');"></div>
+        <div class="h2-card-gradient"></div>
+        <div class="h2-card-body">
+          <span class="h2-card-index">02</span>
+          <div class="h2-card-text">
+            <h3 class="h2-card-title" data-translate="h_sec2_mat2_title">КАМЕНЬ</h3>
+            <div class="h2-card-rule"></div>
+            <p class="h2-card-desc" data-translate="h_sec2_mat2_desc">Речные камни — фундамент и очаги.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h2-card">
+        <div class="h2-card-bg" style="background-image: url('assets/haven_water_fall.jpg');"></div>
+        <div class="h2-card-gradient"></div>
+        <div class="h2-card-body">
+          <span class="h2-card-index">03</span>
+          <div class="h2-card-text">
+            <h3 class="h2-card-title" data-translate="h_sec2_mat3_title">ВОДА</h3>
+            <div class="h2-card-rule"></div>
+            <p class="h2-card-desc" data-translate="h_sec2_mat3_desc">Природные потоки, вписанные в архитектуру.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h2-card">
+        <div class="h2-card-bg" style="background-image: url('assets/haven_silence_hq.jpg');"></div>
+        <div class="h2-card-gradient"></div>
+        <div class="h2-card-body">
+          <span class="h2-card-index">04</span>
+          <div class="h2-card-text">
+            <h3 class="h2-card-title" data-translate="h_sec2_mat4_title">ТИШИНА</h3>
+            <div class="h2-card-rule"></div>
+            <p class="h2-card-desc" data-translate="h_sec2_mat4_desc">Голос древней Амазонии — без слов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-flow-arrow">↓</div>
+  </section>
+
+  <!-- SECTION 03: YOUR STAY -->
+  <section class="haven-section haven-stay-sec" id="haven-sec-03">
+    <div class="haven-sec-inner">
+      <span class="haven-sec-num">03</span>
+      <h2 class="haven-main-title" data-translate="h_sec3_title">ПРОЖИВАНИЕ</h2>
+      <p class="haven-main-sub" data-translate="h_sec3_sub">ЭКОСИСТЕМА И КОМФОРТ</p>
+      
+      <div class="haven-stay-grid">
+        <!-- Card 1: JUNGLE LODGE -->
+        <div class="stay-premium-card">
+          <div class="sp-img-box">
+            <img src="assets/jungle_lodge.jpg" alt="Jungle Lodge" class="sp-img">
+          </div>
+          <div class="sp-content">
+            <span class="sp-card-index">01 — ЛЕСНОЙ ЛОДЖ</span>
+            <h3 class="sp-title" data-translate="stay_card1_title">ЛЕСНОЙ ЛОДЖ</h3>
+            <div class="sp-divider"></div>
+            <p class="sp-desc" data-translate="stay_card1_desc">Построен полностью из поваленной твердой древесины и местного сланца. Спроектирован так, чтобы обеспечить абсолютную тишину и вентиляцию. Открывает панорамный вид на тихую гладь дикой лагуны.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: RIVER CAMP -->
+        <div class="stay-premium-card">
+          <div class="sp-img-box">
+            <img src="assets/river_camp.jpg" alt="River Camp" class="sp-img">
+          </div>
+          <div class="sp-content">
+            <span class="sp-card-index">02 — РЕЧНОЙ ЛАГЕРЬ</span>
+            <h3 class="sp-title" data-translate="stay_card2_title">РЕЧНОЙ ЛАГЕРЬ</h3>
+            <div class="sp-divider"></div>
+            <p class="sp-desc" data-translate="stay_card2_desc">Просыпайтесь прямо на естественном движении древней Амазонки. Минималистичные павильоны на устойчивых плавучих доках позволяют слышать глубокий ритм реки без каких-либо преград.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: PRIVATE CABIN -->
+        <div class="stay-premium-card">
+          <div class="sp-img-box">
+            <img src="assets/private_cabin.jpg" alt="Private Cabin" class="sp-img">
+          </div>
+          <div class="sp-content">
+            <span class="sp-card-index">03 — ПРИВАТНАЯ ВИЛЛА</span>
+            <h3 class="sp-title" data-translate="stay_card3_title">ПРИВАТНАЯ ВИЛЛА</h3>
+            <div class="sp-divider"></div>
+            <p class="sp-desc" data-translate="stay_card3_desc">Чистая интеграция камня, необработанного стекла и тропической листвы. Абсолютная приватность, персональные минеральные бассейны и видовая панорамная площадка над кронами дикого леса.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-flow-arrow">↓</div>
+  </section>
+
+
+  <!-- SECTION 04: MENU -->
+  <section class="haven-section haven-menu-sec" id="haven-sec-04">
+    <div class="haven-sec-inner">
+      <span class="haven-sec-num">04</span>
+      <h2 class="haven-main-title" data-translate="h_sec5_title">МЕНЮ</h2>
+      <p class="haven-main-sub" data-translate="menu_subtitle">АМАЗОНСКАЯ ГАСТРОНОМИЯ</p>
+      
+      <div class="haven-menu-tabs-grid">
+        <!-- BREAKFAST -->
+        <div class="haven-menu-col" data-meal-category="breakfast">
+          <h3 class="menu-col-header" data-translate="h_sec5_b_title">ЗАВТРАК</h3>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_b1_title">Тапиока и сыр Коальо</span>
+            <span class="item-desc" data-translate="h_sec5_b1_desc">Хрустящие крепы из маниоки с диким мёдом.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_b2_title">Кускус с фруктом Тукума</span>
+            <span class="item-desc" data-translate="h_sec5_b2_desc">Пирог из кукурузной муки с лесными плодами.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_b3_title">Эликсиры тропических фруктов</span>
+            <span class="item-desc" data-translate="h_sec5_b3_desc">Свежевыжатые Гравиола, Купуасу и Асаи.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_b4_title">Яйца с листьями джамбу</span>
+            <span class="item-desc" data-translate="h_sec5_b4_desc">Томлёные яйца с диким перцем и пряными лесными травами.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_b5_title">Ночной настой Купуасу</span>
+            <span class="item-desc" data-translate="h_sec5_b5_desc">Горячий напиток из бобов купуасу с корицей и местным мёдом.</span>
+          </div>
+        </div>
+
+        <!-- LUNCH -->
+        <div class="haven-menu-col" data-meal-category="lunch">
+          <h3 class="menu-col-header" data-translate="h_sec5_l_title">ОБЕД</h3>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_l1_title">Рыба Тамбаки на гриле</span>
+            <span class="item-desc" data-translate="h_sec5_l1_desc">Речная рыба на открытом огне с соусом Тукупи.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_l2_title">Мокека Байяна</span>
+            <span class="item-desc" data-translate="h_sec5_l2_desc">Кокосовое молоко, масло дендэ и лесные травы.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_l3_title">Хрустящая Фарофа де Уарини</span>
+            <span class="item-desc" data-translate="h_sec5_l3_desc">Жёлтая мука маниоки, обжаренная в топлёном масле.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_l4_title">Суп из лесных побегов</span>
+            <span class="item-desc" data-translate="h_sec5_l4_desc">Бульон из дикого пальмового сердца с имбирём и лимонником.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_l5_title">Салат Асаи и Купуасу</span>
+            <span class="item-desc" data-translate="h_sec5_l5_desc">Охлаждённые лесные ягоды с листьями водяного кресса и цедрой.</span>
+          </div>
+        </div>
+
+        <!-- DINNER -->
+        <div class="haven-menu-col" data-meal-category="dinner">
+          <h3 class="menu-col-header" data-translate="h_sec5_d_title">УЖИН</h3>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_d1_title">Медленное копчёное мясо</span>
+            <span class="item-desc" data-translate="h_sec5_d1_desc">Копчёное над местной древесиной с травами Амазонки.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_d2_title">Филе Пираруку в глиняном горшке</span>
+            <span class="item-desc" data-translate="h_sec5_d2_desc">Гигантская рыба Амазонки с листьями джамбу.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_d3_title">Мусс Купуасу и Какао</span>
+            <span class="item-desc" data-translate="h_sec5_d3_desc">Лесной фруктовый тарт с тёмным шоколадом Амазонки.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_d4_title">Утка в соусе из Тукупи</span>
+            <span class="item-desc" data-translate="h_sec5_d4_desc">Традиционное блюдо Пара — утиное конфи в кислом соусе маниоки.</span>
+          </div>
+          <div class="menu-item-box">
+            <span class="item-title" data-translate="h_sec5_d5_title">Кремё из дикого какао</span>
+            <span class="item-desc" data-translate="h_sec5_d5_desc">Нежный шоколадный крем с солью и листьями пипи.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-flow-arrow">↓</div>
+  </section>
+
+  <!-- SECTION 06: PART OF THE JOURNEY -->
+  <section class="haven-section haven-included-sec" id="haven-sec-06">
+    <div class="haven-sec-inner">
+      <span class="haven-sec-num">06</span>
+      <h2 class="haven-main-title" data-translate="h_sec7_title">ЧТО ВКЛЮЧЕНО</h2>
+      <p class="haven-main-sub" data-translate="h_sec7_sub">ДЕТАЛИ ЭКСПЕДИЦИИ</p>
+      
+      <div class="haven-inc-exc-grid">
+        <!-- COLUMN 1: WHAT'S INCLUDED -->
+        <div class="inc-exc-col">
+          <h3 class="col-header-text" data-translate="h_sec7_col_inc">ВКЛЮЧЕНО</h3>
+          
+          <div class="inc-exc-row">
+            <span class="inc-icon">✓</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_inc1_title">9 ночей проживания класса люкс</h4>
+              <p data-translate="h_sec7_inc1_desc">Размещение в речных лоджах, плавучих лагерях и лесных кабинах.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row">
+            <span class="inc-icon">✓</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_inc2_title">Авторская гастрономия</h4>
+              <p data-translate="h_sec7_inc2_desc">Полный пансион, лесные деликатесы, напитки и закуски в течение всего дня.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row">
+            <span class="inc-icon">✓</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_inc3_title">Трансферы по маршруту</h4>
+              <p data-translate="h_sec7_inc3_desc">Все лодочные маршруты, внутренние перелеты и гидросамолеты.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row">
+            <span class="inc-icon">✓</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_inc4_title">Экспедиции и гиды</h4>
+              <p data-translate="h_sec7_inc4_desc">Сопровождение биологов, восхождения на полог леса и трекинг с гидами.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row">
+            <span class="inc-icon">✓</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_inc5_title">Профессиональное снаряжение</h4>
+              <p data-translate="h_sec7_inc5_desc">Непромокаемая одежда, трекинговое снаряжение и органическая косметика.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row">
+            <span class="inc-icon">✓</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_inc6_title">Полевая медицина и страховка</h4>
+              <p data-translate="h_sec7_inc6_desc">Включая экстренную медицинскую эвакуацию вертолетом.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row">
+            <span class="inc-icon">✓</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_inc7_title">Фотограф экспедиции</h4>
+              <p data-translate="h_sec7_inc7_desc">Профессиональный натурфотограф сопровождает группу на протяжении всего маршрута.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row">
+            <span class="inc-icon">✓</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_inc8_title">Ночные экскурсии</h4>
+              <p data-translate="h_sec7_inc8_desc">Наблюдение за дикой природой Амазонии при свете луны с опытным проводником.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMN 2: WHAT'S EXCLUDED -->
+        <div class="inc-exc-col">
+          <h3 class="col-header-text" data-translate="h_sec7_col_exc">НЕ ВКЛЮЧЕНО</h3>
+
+          <div class="inc-exc-row exc-style">
+            <span class="exc-icon">✕</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_exc1_title">Авиабилеты до Манауса</h4>
+              <p data-translate="h_sec7_exc1_desc">Международные и внутренние перелеты до точки сбора группы.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row exc-style">
+            <span class="exc-icon">✕</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_exc2_title">Премиальный алкоголь</h4>
+              <p data-translate="h_sec7_exc2_desc">Коллекционные вина и крепкие напитки вне стандартного барного меню.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row exc-style">
+            <span class="exc-icon">✕</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_exc3_title">Чаевые команде</h4>
+              <p data-translate="h_sec7_exc3_desc">Вознаграждение для местных проводников, поваров и экипажа катера.</p>
+            </div>
+          </div>
+
+          <div class="inc-exc-row exc-style">
+            <span class="exc-icon">✕</span>
+            <div class="inc-info">
+              <h4 data-translate="h_sec7_exc4_title">Личная экипировка</h4>
+              <p data-translate="h_sec7_exc4_desc">Индивидуальная трекинговая обувь, специализированное термобелье.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-flow-arrow">↓</div>
+  </section>
+
+
+  <!-- SECTION 07: PRICING -->
+  <section class="haven-section haven-pricing-sec" id="haven-sec-pricing">
+    <div class="haven-sec-inner">
+      <span class="haven-sec-num">07</span>
+      <h2 class="haven-main-title" data-translate="pricing_title">СТОИМОСТЬ</h2>
+      <p class="haven-main-sub" data-translate="pricing_sub">10 ДНЕЙ · ПОЛНОЕ ПОГРУЖЕНИЕ</p>
+
+      <div class="haven-pricing-grid">
+
+        <!-- SOLO -->
+        <div class="pricing-card">
+          <div class="pricing-card-top">
+            <span class="pricing-tier-label" data-translate="pricing_solo_label">SOLO</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-value">14 900</span>
+            </div>
+            <span class="pricing-per" data-translate="pricing_solo_per">на одного гостя</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="pf-dot"></span><span data-translate="pricing_f1">10 ночей в частных гаванях</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f2">Полный пансион — 3 блюда в день</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f3">Все трансферы по маршруту</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f4">Гид-натуралист на каждый день</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f5">Снаряжение и органическая аптечка</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f6">Страховка и медэвакуация</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f7">Фотограф экспедиции</span></li>
+          </ul>
+          <a href="book.html" class="pricing-cta" id="pricing-solo-btn">
+            <span data-translate="pricing_cta_book">ЗАБРОНИРОВАТЬ</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- DUO -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge" data-translate="pricing_badge">ПОПУЛЯРНО</div>
+          <div class="pricing-card-top">
+            <span class="pricing-tier-label" data-translate="pricing_duo_label">DUO</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-value">24 500</span>
+            </div>
+            <span class="pricing-per" data-translate="pricing_duo_per">за двоих гостей</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="pf-dot"></span><span data-translate="pricing_f1">10 ночей в частных гаванях</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f2">Полный пансион — 3 блюда в день</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f3">Все трансферы по маршруту</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f4">Гид-натуралист на каждый день</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f5">Снаряжение и органическая аптечка</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f6">Страховка и медэвакуация</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f7">Фотограф экспедиции</span></li>
+            <li><span class="pf-dot pf-dot--gold"></span><span data-translate="pricing_f8">Приватная вилла с бассейном</span></li>
+            <li><span class="pf-dot pf-dot--gold"></span><span data-translate="pricing_f9">Гидросамолёт над джунглями</span></li>
+          </ul>
+          <a href="book.html" class="pricing-cta pricing-cta--gold" id="pricing-duo-btn">
+            <span data-translate="pricing_cta_book">ЗАБРОНИРОВАТЬ</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- GROUP -->
+        <div class="pricing-card">
+          <div class="pricing-card-top">
+            <span class="pricing-tier-label" data-translate="pricing_group_label">GROUP</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-value">9 800</span>
+            </div>
+            <span class="pricing-per" data-translate="pricing_group_per">с человека (от 4 гостей)</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><span class="pf-dot"></span><span data-translate="pricing_f1">10 ночей в частных гаванях</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f2">Полный пансион — 3 блюда в день</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f3">Все трансферы по маршруту</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f4">Гид-натуралист на каждый день</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f5">Снаряжение и органическая аптечка</span></li>
+            <li><span class="pf-dot"></span><span data-translate="pricing_f6">Страховка и медэвакуация</span></li>
+            <li><span class="pf-dot pf-dot--gold"></span><span data-translate="pricing_f10">Групповой ценовой приоритет</span></li>
+          </ul>
+          <a href="book.html" class="pricing-cta" id="pricing-group-btn">
+            <span data-translate="pricing_cta_book">ЗАБРОНИРОВАТЬ</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note" data-translate="pricing_note">Стоимость указана без учёта авиаперелётов до Манауса. Возможна рассрочка и индивидуальные условия — свяжитесь с нами.</p>
+    </div>
+    <div class="section-flow-arrow">↓</div>
+  </section>
+
+
+  <!-- =========================================================================
+       FINALE (10 DAYS BEHIND & CALL TO ACTION WITH VIDEO)
+       ========================================================================= -->
+  <section id="sec-finale" class="home-finale-section">
+    <div class="finale-bg-wrapper">
+      <video autoplay muted loop playsinline class="finale-bg-video">
+        <source src="assets/finale.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="finale-dark-overlay"></div>
+    
+    <div class="finale-content-inner">
+      <span class="finale-tag" data-translate="home_finale_title">10 ДНЕЙ ПОЗАДИ</span>
+      <h2 class="finale-hero-title" data-translate="home_finale_sub">ВЫ ВЕРНЕТЕСЬ ДРУГИМ ЧЕЛОВЕКОМ</h2>
+      <p class="finale-hero-desc" data-translate="home_finale_desc">Амазонка оставляет след навсегда. Забронируйте свое место в приватной экспедиции 2026 года.</p>
+      
+      <div class="finale-cta-box">
+        <a href="book.html" class="btn-booking finale-primary-btn">
+          <span data-translate="home_finale_btn">ЗАБРОНИРОВАТЬ ЭКСПЕДИЦИЮ</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" data-translate="brand_logo">М А И Р А</a>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="journey.html" data-translate="nav_journey">ПУТЬ</a>
+        <span class="footer-dot">·</span>
+        <a href="havens.html" data-translate="nav_havens">ГАВАНЬ</a>
+        <span class="footer-dot">·</span>
+        <a href="manifesto.html" data-translate="nav_manifesto">МАНИФЕСТ</a>
+        <span class="footer-dot">·</span>
+        <a href="book.html" data-translate="footer_nav_book">ЗАБРОНИРОВАТЬ</a>
+      </nav>
+
+      <div class="footer-copy" data-translate="footer_copyright">
+        &copy; 2026 MAIRA PRIVATE RETREATS
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Language Switcher -->
+  <div class="floating-lang-switcher">
+    <button class="lang-btn active" data-lang="ru">RU</button>
+    <span class="lang-separator">|</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <script src="main.js?v=v186_small_green_numbers"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="site_title">М А И Р А — 10 Days Deep Green Luxury Expedition</title>
+  <meta name="description" content="A private 10-day luxury expedition into the heart of the Amazon rainforest. A sanctuary of silence, wood, stone, and wild waters. Only 8 guests.">
+  
+  <!-- Fonts: Cormorant Garamond for Serif headers & Inter for Grotesque UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=v186_small_green_numbers">
+  
+</head>
+<body>
+
+  <!-- Navigation bar (Glassmorphism) -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" data-translate="brand_logo">М А И Р А</a>
+      
+      <div class="nav-links">
+        <a href="journey.html" class="nav-link"><span data-translate="nav_journey">ПУТЬ</span></a>
+        <a href="havens.html" class="nav-link"><span data-translate="nav_havens">ГАВАНЬ</span></a>
+        <a href="manifesto.html" class="nav-link"><span data-translate="nav_manifesto">МАНИФЕСТ</span></a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="book.html" class="nav-cta-btn" data-translate="nav_cta">ЗАБРОНИРОВАТЬ <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Button -->
+  <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-links">
+      <a href="journey.html" class="mobile-link"><span data-translate="nav_journey">ПУТЬ</span></a>
+      <a href="havens.html" class="mobile-link"><span data-translate="nav_havens">ГАВАНЬ</span></a>
+      <a href="manifesto.html" class="mobile-link"><span data-translate="nav_manifesto">МАНИФЕСТ</span></a>
+      <a href="book.html" class="mobile-cta-btn" data-translate="nav_cta">ЗАБРОНИРОВАТЬ <span class="arrow">→</span></a>
+    </div>
+  </div>
+
+  <!-- Floating Vertical Timeline -->
+  <div class="journey-timeline">
+    <div class="timeline-line">
+      <div class="timeline-progress"></div>
+    </div>
+    <div class="timeline-dots">
+      <div class="timeline-dot active" data-target="day1"><span>01</span></div>
+      <div class="timeline-dot" data-target="day2"><span>02</span></div>
+      <div class="timeline-dot" data-target="day3"><span>03</span></div>
+      <div class="timeline-dot" data-target="day4"><span>04</span></div>
+      <div class="timeline-dot" data-target="day5"><span>05</span></div>
+      <div class="timeline-dot" data-target="day6"><span>06</span></div>
+      <div class="timeline-dot" data-target="day7"><span>07</span></div>
+      <div class="timeline-dot" data-target="day8"><span>08</span></div>
+      <div class="timeline-dot" data-target="day9"><span>09</span></div>
+      <div class="timeline-dot" data-target="day10"><span>10</span></div>
+    </div>
+  </div>
+
+  <!-- Journey Hero Screen -->
+  <section class="journey-hero">
+    <div class="journey-hero-bg">
+      <video
+        class="journey-hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="assets/hero.jpg"
+      >
+        <source src="assets/352837_medium.mp4" type="video/mp4">
+        <!-- fallback -->
+        <img src="assets/hero.jpg" alt="Amazon river at dawn" class="journey-hero-img">
+      </video>
+    </div>
+    <div class="journey-hero-overlay"></div>
+    <div class="journey-hero-mist mist-1"></div>
+    <div class="journey-hero-mist mist-2"></div>
+    <div class="journey-hero-mist mist-3"></div>
+    <div class="journey-hero-content">
+      <div class="journey-hero-tag" data-translate="route_tag">ПУТЬ</div>
+      <h1 class="journey-hero-title" data-translate="journey_hero_title">В ГЛУБИНЕ<br>ПРИРОДЫ</h1>
+      <p class="journey-hero-sub" data-translate="journey_hero_sub">Один путь вглубь Амазонки.</p>
+      <a href="book.html" class="btn-booking" id="journey-hero-cta">
+        <span data-translate="journey_hero_btn">ЗАБРОНИРОВАТЬ</span> <span class="arrow">→</span>
+      </a>
+    </div>
+    <a class="journey-hero-scroll" href="#route" aria-label="Scroll down">
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- Transition Screen: 10 Days 9 Nights -->
+  <section class="journey-intro-transition">
+    <div class="journey-intro-container">
+      <div class="journey-intro-days">
+        <span class="intro-num">10</span> <span class="intro-label" data-translate="intro_days">DAYS</span>
+      </div>
+      <div class="journey-intro-nights">
+        <span class="intro-num">9</span> <span class="intro-label" data-translate="intro_nights">NIGHTS</span>
+      </div>
+      
+      <div class="journey-intro-divider"></div>
+      
+      <div class="journey-intro-pillars" data-translate="intro_pillars">
+        RIVER · FOREST · WILDERNESS
+      </div>
+      
+      <div class="journey-intro-coords">
+        03°11' S · 060°05' W
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 01: Route -->
+  <section id="route" class="route-section">
+    <div class="section-tag" data-translate="route_tag">THE JOURNEY</div>
+    
+    <!-- Day 1 -->
+    <div class="route-day" id="day1">
+      <div class="day-bg-wrapper">
+        <img src="assets/day1.jpg" alt="Arrival Evening" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day1_meta">RIVER LODGE / 03°08' S / 060°01' W / 18:30</div>
+        <h2 class="day-title" data-translate="day1_title"><span class="day-num-label">ДЕНЬ&nbsp;01</span>ПРИБЫТИЕ</h2>
+        <p class="day-description" data-translate="day1_desc">Arrival in Amazonas. Private boat transfer deep into the pristine rainforest.<br>First evening at the secluded water lodge, listening to the night forest awaken.<br>Immerse yourself in the timeless tranquility of the ancient river basin.</p>
+      </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="route-day" id="day2">
+      <div class="day-bg-wrapper">
+        <img src="assets/day2.jpg" alt="Into the Forest" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day2_meta">CANOPY TRAIL / 03°09' S / 060°03' W / 08:00</div>
+        <h2 class="day-title" data-translate="day2_title"><span class="day-num-label">ДЕНЬ&nbsp;02</span>ВГЛУБЬ&nbsp;ЛЕСА</h2>
+        <p class="day-description" data-translate="day2_desc">Morning trek into the rainforest guided by native expedition experts.<br>Encounter ancient medicinal flora, damp mosses, and hidden micro-habitats.<br>Explore ancient forest trails and discover secrets of untouched wilderness.</p>
+      </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="route-day" id="day3">
+      <div class="day-bg-wrapper">
+        <img src="assets/day3.jpg" alt="River Boat Expedition" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day3_meta">BLACKWATER / 03°11' S / 060°05' W / 06:00</div>
+        <h2 class="day-title" data-translate="day3_title"><span class="day-num-label">ДЕНЬ&nbsp;03</span>РЕКА</h2>
+        <p class="day-description" data-translate="day3_desc">A quiet wooden boat expedition along dark water tributaries.<br>Spot pink river dolphins and prehistoric hoatzin birds.<br>Encounter giant water lilies deep inside winding river channels.</p>
+      </div>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="route-day" id="day4">
+      <div class="day-bg-wrapper">
+        <img src="assets/day4.jpg" alt="Deep Jungle Ceiba" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day4_meta">ANCIENT GROVE / 03°15' S / 060°09' W / 10:30</div>
+        <h2 class="day-title" data-translate="day4_title"><span class="day-num-label">ДЕНЬ&nbsp;04</span>ГЛУБОКИЕ&nbsp;ДЖУНГЛИ</h2>
+        <p class="day-description" data-translate="day4_desc">Entering the pristine primary forest to stand beneath ancient Ceiba trees.<br>An immersive trek experiencing the true grand scale of untouched nature.<br>Connect with the majestic giant trees of the ancient Amazonian forest.</p>
+      </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="route-day" id="day5">
+      <div class="day-bg-wrapper">
+        <img src="assets/day5.jpg" alt="Canopy Observation" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day5_meta">TOWER 03°16' S / 17:15</div>
+        <h2 class="day-title" data-translate="day5_title"><span class="day-num-label">ДЕНЬ&nbsp;05</span>НАБЛЮДЕНИЕ&nbsp;С&nbsp;ВЫСОТЫ</h2>
+        <p class="day-description" data-translate="day5_desc">Ascend to an elevated canopy platform perched high above the ancient treetops of the tropical rainforest,<br>witnessing a serene, breathtaking sunrise over the endless green ocean of the untouched Amazon basin.<br>Experience the immense scale of the canopy and the silence of the morning jungle.</p>
+      </div>
+    </div>
+
+    <!-- Day 6 -->
+    <div class="route-day" id="day6">
+      <div class="day-bg-wrapper">
+        <img src="assets/day6.jpg" alt="Night Expedition" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day6_meta">UNDERSTORY / 03°18' S / 21:00</div>
+        <h2 class="day-title" data-translate="day6_title"><span class="day-num-label">ДЕНЬ&nbsp;06</span>НОЧНАЯ&nbsp;ЭКСПЕДИЦИЯ</h2>
+        <p class="day-description" data-translate="day6_desc">A captivating night expedition beneath the dark, dense understory of the primary Amazonian rainforest,<br>unveiling rare bioluminescent flora and the intense, enchanting nocturnal sounds of untouched nature.<br>Discover the hidden night secrets of the wild beneath the dark forest canopy.</p>
+      </div>
+    </div>
+
+    <!-- Day 7 -->
+    <div class="route-day" id="day7">
+      <div class="day-bg-wrapper">
+        <img src="assets/day7.jpg" alt="Remote Floating Camp" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day7_meta">RIVER CAMP / 03°22' S / 05:30</div>
+        <h2 class="day-title" data-translate="day7_title"><span class="day-num-label">ДЕНЬ&nbsp;07</span>ПЛАВУЧИЙ&nbsp;ЛАГЕРЬ</h2>
+        <p class="day-description" data-translate="day7_desc">Relocate to an exclusive, deeply secluded floating river retreat anchored on the calm Amazonian waters,<br>sleeping soundly to the gentle, soothing rhythm and tranquil whisper of the historic river currents.<br>Total seclusion immersed in pristine nature on the water far from civilization.</p>
+      </div>
+    </div>
+
+    <!-- Day 8 -->
+    <div class="route-day" id="day8">
+      <div class="day-bg-wrapper">
+        <video
+          class="day-bg-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/manifesto.jpg"
+        >
+          <source src="assets/day8.mp4" type="video/mp4">
+          <img src="assets/manifesto.jpg" alt="Wildlife Tracking" class="day-bg-img">
+        </video>
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day8_meta">LAGOON / 03°25' S / 09:15</div>
+        <h2 class="day-title" data-translate="day8_title"><span class="day-num-label">ДЕНЬ&nbsp;08</span>ПОИСК&nbsp;ЯГУАРА</h2>
+        <p class="day-description" data-translate="day8_desc">An exhilarating wildlife tracking expedition to spot elusive jaguars, rare harpy eagles, and giant otters,<br>exploring the most protected, isolated lagoons hidden along pristine blackwater tributaries of the basin.<br>A unique opportunity to observe the rarest forest wildlife in their natural habitat.</p>
+      </div>
+    </div>
+
+    <!-- Day 9 -->
+    <div class="route-day" id="day9">
+      <div class="day-bg-wrapper">
+        <img src="assets/lodge.jpg" alt="Local Wisdom" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day9_meta">SETTLEMENT / 03°27' S / 14:00</div>
+        <h2 class="day-title" data-translate="day9_title"><span class="day-num-label">ДЕНЬ&nbsp;09</span>МУДРОСТЬ&nbsp;ПРЕДКОВ</h2>
+        <p class="day-description" data-translate="day9_desc">Immerse in ancient survival philosophy, sacred rainforest navigation, and indigenous ethnobotany,<br>receiving timeless wisdom shared directly by native community elders passed down for generations.<br>Understand the ancient harmony between humanity and the great Amazonian rainforest.</p>
+      </div>
+    </div>
+
+    <!-- Day 10 -->
+    <div class="route-day" id="day10" style="border-bottom: 1px solid rgba(255, 255, 255, 0.03);">
+      <div class="day-bg-wrapper">
+        <img src="assets/hero.jpg" alt="Return" class="day-bg-img">
+      </div>
+      <div class="day-overlay"></div>
+      <div class="day-content">
+        <div class="day-meta" data-translate="day10_meta">MANAUS / 03°08' S / 060°01' W / 12:00</div>
+        <h2 class="day-title" data-translate="day10_title"><span class="day-num-label">ДЕНЬ&nbsp;10</span>ВОЗВРАЩЕНИЕ</h2>
+        <p class="day-description" data-translate="day10_desc">A final morning river cruise along the historic Amazon back to civilization.<br>Carry the silence and timelessness of the great jungle back home with you.<br>The conclusion of an unforgettable journey that will stay in your memory forever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FINALE (10 DAYS BEHIND & CALL TO ACTION WITH VIDEO)
+       ========================================================================= -->
+  <section id="sec-finale" class="home-finale-section">
+    <div class="finale-bg-wrapper">
+      <video autoplay muted loop playsinline class="finale-bg-video">
+        <source src="assets/finale.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="finale-dark-overlay"></div>
+    
+    <div class="finale-content-inner">
+      <span class="finale-tag" data-translate="home_finale_title">10 ДНЕЙ ПОЗАДИ</span>
+      <h2 class="finale-hero-title" data-translate="home_finale_sub">ВЫ ВЕРНЕТЕСЬ ДРУГИМ ЧЕЛОВЕКОМ</h2>
+      <p class="finale-hero-desc" data-translate="home_finale_desc">Амазонка оставляет след навсегда. Забронируйте свое место в приватной экспедиции 2026 года.</p>
+      
+      <div class="finale-cta-box">
+        <a href="book.html" class="btn-booking finale-primary-btn">
+          <span data-translate="home_finale_btn">ЗАБРОНИРОВАТЬ ЭКСПЕДИЦИЮ</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" data-translate="brand_logo">М А И Р А</a>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="journey.html" data-translate="nav_journey">ПУТЬ</a>
+        <span class="footer-dot">·</span>
+        <a href="havens.html" data-translate="nav_havens">ГАВАНЬ</a>
+        <span class="footer-dot">·</span>
+        <a href="manifesto.html" data-translate="nav_manifesto">МАНИФЕСТ</a>
+        <span class="footer-dot">·</span>
+        <a href="book.html" data-translate="footer_nav_book">ЗАБРОНИРОВАТЬ</a>
+      </nav>
+
+      <div class="footer-copy" data-translate="footer_copyright">
+        &copy; 2026 MAIRA PRIVATE RETREATS
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Language Switcher -->
+  <div class="floating-lang-switcher">
+    <button class="lang-btn active" data-lang="ru">RU</button>
+    <span class="lang-separator">|</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <script src="main.js?v=v186_small_green_numbers"></script>
+</body>
+</html>
