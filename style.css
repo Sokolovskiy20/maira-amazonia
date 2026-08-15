@@ -601,6 +601,7 @@ img {
   position: absolute;
   inset: 0;
   z-index: -2;
+  background-color: #06130C;
 }
 
 .journey-hero-img {
@@ -2353,6 +2354,7 @@ img {
   height: 100%;
   z-index: 1;
   overflow: hidden;
+  background-color: #06130C;
 }
 
 .manifesto-bg-video {
@@ -4227,6 +4229,7 @@ img {
   position: absolute;
   inset: 0;
   z-index: 1;
+  background-color: #06130C;
 }
 
 .haven-hero-img,
