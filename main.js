@@ -278,6 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_subtitle: "Приватное путешествие в самое сердце Амазонии.",
       hero_btn_primary: "ИССЛЕДОВАТЬ МАРШРУТ",
       hero_btn_outline: "ЗАБРОНИРОВАТЬ ЭКСПЕДИЦИЮ",
+      hero_btn_book_text: "ЗАБРОНИРОВАТЬ",
       hero_stat_days: "10 ДНЕЙ",
       hero_stat_brand: "М А И Р А",
       hero_stat_group: "ПРИВАТНАЯ ГРУППА",
@@ -794,6 +795,7 @@ document.addEventListener('DOMContentLoaded', () => {
       home_h_sub_tag: "EXCLUSIVE EXPEDITION",
       home_h_title: "10 DAYS IN THE AMAZON",
       home_btn_journey: "OPEN THE PATH",
+      hero_btn_book_text: "BOOK NOW",
       
       home_journey_title: "10 DAYS OF EXPEDITION",
       home_journey_sub: "Immerse into the untouched depths of the Amazon day by day",
