@@ -249,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ru: {
       site_title: "М А И Р А — 10 Дней Глубокой Экспедиции",
       brand_logo: "М А И Р А",
+      nav_home: "ГЛАВНАЯ",
       nav_num_1: "01",
       nav_journey: "ПУТЬ",
       nav_num_2: "02",
@@ -742,6 +743,7 @@ document.addEventListener('DOMContentLoaded', () => {
     en: {
       site_title: "MAIRA — 10 Days Deep Green Luxury Expedition",
       brand_logo: "M A I R A",
+      nav_home: "HOME",
       nav_num_1: "01",
       nav_journey: "THE PATH",
       nav_num_2: "02",
@@ -1267,7 +1269,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.title = translations[lang].site_title;
 
     // Update active class on lang switcher buttons
-    document.querySelectorAll('.lang-btn').forEach(btn => {
+    document.querySelectorAll('.lang-btn, .mobile-lang-btn').forEach(btn => {
       if (btn.getAttribute('data-lang') === lang) {
         btn.classList.add('active');
       } else {
@@ -1334,7 +1336,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Bind language switcher buttons
-  document.querySelectorAll('.lang-btn').forEach(btn => {
+  document.querySelectorAll('.lang-btn, .mobile-lang-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       const targetLang = e.currentTarget.getAttribute('data-lang');
       updateLanguage(targetLang);
