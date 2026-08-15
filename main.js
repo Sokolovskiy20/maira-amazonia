@@ -62,6 +62,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // --- Video Autoplay Guardian (Prevents freezing, ensures instant smooth loop) ---
+  document.querySelectorAll('video').forEach(video => {
+    video.muted = true;
+    video.playsInline = true;
+    video.setAttribute('muted', '');
+    video.setAttribute('playsinline', '');
+    
+    const tryPlay = () => {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // If browser throttles autoplay, resume immediately on user interaction
+          const resumeOnTouch = () => {
+            video.play().catch(() => {});
+            document.removeEventListener('touchstart', resumeOnTouch);
+            document.removeEventListener('click', resumeOnTouch);
+            document.removeEventListener('scroll', resumeOnTouch);
+          };
+          document.addEventListener('touchstart', resumeOnTouch, { once: true, passive: true });
+          document.addEventListener('click', resumeOnTouch, { once: true, passive: true });
+          document.addEventListener('scroll', resumeOnTouch, { once: true, passive: true });
+        });
+      }
+    };
+
+    tryPlay();
+
+    // Resume video playback when tab becomes active again
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && video.paused) {
+        video.play().catch(() => {});
+      }
+    });
+  });
+
   // --- Mobile Menu Toggle ---
   const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
