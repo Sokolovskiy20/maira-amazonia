@@ -209,17 +209,42 @@ img {
   bottom: 0;
   left: 0;
   width: 0;
-  height: 1px;
-  background-color: var(--mist);
-  transition: width 0.3s ease;
+  height: 2px;
+  background: linear-gradient(90deg, #52B77A 0%, #A3E6BA 50%, #52B77A 100%);
+  transition: width 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s ease;
+  border-radius: 2px;
 }
 
-.nav-link:hover, .nav-link.active {
-  color: var(--text-highlight);
+.nav-link:hover {
+  color: #ECF8F1;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after {
   width: 100%;
+}
+
+.nav-link.active {
+  color: #52B77A !important;
+  font-weight: 600;
+  text-shadow: 0 0 14px rgba(82, 183, 122, 0.5);
+}
+
+.nav-link.active::after {
+  width: 100% !important;
+  box-shadow: 0 0 10px rgba(82, 183, 122, 0.85);
+}
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background: #52B77A;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #52B77A, 0 0 14px rgba(82, 183, 122, 0.8);
 }
 
 .nav-cta-btn {
@@ -238,12 +263,13 @@ img {
   box-shadow: 0 2px 14px var(--btn-glow);
 }
 
-.nav-cta-btn:hover {
+.nav-cta-btn:hover,
+.nav-cta-btn.active {
   gap: 0.65rem;
-  background-color: var(--palm-green-hover);
-  border-color: var(--palm-green-hover);
-  color: #FFFFFF;
-  box-shadow: 0 4px 20px rgba(56, 147, 87, 0.5);
+  background-color: #62cf8f;
+  border-color: #A3E6BA;
+  color: #06130C;
+  box-shadow: 0 4px 22px rgba(82, 183, 122, 0.65);
   transform: translateY(-1px);
 }
 
@@ -5760,9 +5786,23 @@ h2, .sec-title, .home-journey-title, .home-havens-sec-title, .book-title {
   letter-spacing: 0.06em !important;
 }
 
-h3, .iphone-card-title, .haven-box-title, .day-title {
+.iphone-card-title, .haven-box-title, .day-title, .h2-card-title, .sp-title {
   font-size: clamp(1.35rem, 4.5vw, 2.2rem) !important;
   line-height: 1.2 !important;
+}
+
+/* Refined Luxury Subheaders (Reduced ~3x as requested) */
+.menu-col-header,
+.col-header-text {
+  font-family: var(--font-sans) !important;
+  font-size: clamp(0.72rem, 1.8vw, 0.85rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.32em !important;
+  color: var(--accent-gold) !important;
+  text-transform: uppercase !important;
+  line-height: 1.4 !important;
+  display: block !important;
+  margin-bottom: 2rem !important;
 }
 
 p, .sec-subtitle, .iphone-card-desc, .haven-box-desc, .day-description {

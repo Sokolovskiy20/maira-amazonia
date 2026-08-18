@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
       home_manifesto_full_btn: "ЧИТАТЬ НАШ МАНИФЕСТ →",
       
       home_finale_title: "10 ДНЕЙ ПОЗАДИ",
-      home_finale_sub: "ВЫ ВЕРНЕТЕСЬ ДРУГИМ ЧЕЛОВЕКОМ",
+      home_finale_sub: "ВЫ ВЕРНЕТЕСЬ<br>ДРУГИМ ЧЕЛОВЕКОМ",
       home_finale_desc: "Амазонка оставляет след навсегда. Забронируйте свое место в приватной экспедиции 2026 года.",
       home_finale_btn: "ЗАБРОНИРОВАТЬ ЭКСПЕДИЦИЮ",
       finale_counter: "10 ДНЕЙ ПОЗАДИ",
@@ -857,7 +857,7 @@ document.addEventListener('DOMContentLoaded', () => {
       home_manifesto_full_btn: "READ OUR MANIFESTO →",
       
       home_finale_title: "10 DAYS BEHIND",
-      home_finale_sub: "YOU RETURN AS SOMEONE ELSE",
+      home_finale_sub: "YOU RETURN AS<br>SOMEONE ELSE",
       home_finale_desc: "The Amazon leaves a permanent mark on the soul. Reserve your place on the 2026 expedition.",
       home_finale_btn: "RESERVE YOUR EXPEDITION",
       finale_counter: "10 DAYS BEHIND",
