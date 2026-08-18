@@ -172,18 +172,27 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Active Nav Links Tracking ---
-  const currentPath = window.location.pathname;
-  let currentFilename = currentPath.substring(currentPath.lastIndexOf('/') + 1);
-  if (!currentFilename || currentFilename === '/') {
-    currentFilename = 'index.html';
-  }
-  
-  document.querySelectorAll('.nav-link, .mobile-link').forEach(link => {
+  const getCleanPageSlug = (rawPath) => {
+    if (!rawPath) return 'index';
+    let clean = rawPath.split('#')[0].split('?')[0];
+    let slug = clean.substring(clean.lastIndexOf('/') + 1);
+    if (!slug || slug === '/' || slug === 'index' || slug === 'index.html') {
+      return 'index';
+    }
+    return slug.replace(/\.html$/, '').toLowerCase();
+  };
+
+  const activePageSlug = getCleanPageSlug(window.location.pathname);
+
+  document.querySelectorAll('.nav-link, .mobile-link, .nav-cta-btn, .mobile-cta-btn').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentFilename) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
+    if (href) {
+      const linkSlug = getCleanPageSlug(href);
+      if (linkSlug === activePageSlug) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
     }
   });
 
